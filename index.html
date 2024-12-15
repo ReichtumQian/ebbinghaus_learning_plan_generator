@@ -211,7 +211,6 @@ body {
 
 		};
 		for (var i = 0,l=plan.length; i < l; i++) {
-			calendar.children().eq(weekday+i).append("<br>*"+book+" "+plan[reverse?l-i-1:i])
 			calendar.children().eq(weekday+i+1).append("<br>*"+book+" "+plan[reverse?l-i-1:i])
 			calendar.children().eq(weekday+i+4).append("<br>*"+book+" "+plan[reverse?l-i-1:i])
 			calendar.children().eq(weekday+i+10).append("<br>*"+book+" "+plan[reverse?l-i-1:i])
