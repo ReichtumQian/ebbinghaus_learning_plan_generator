@@ -168,9 +168,10 @@ body {
 		var firstLineSunday=new Date(new Date(startDate)-weekday*86400000);
 		var calendar=$("#calendar").empty();
 		var	reverse=$("#reverse").prop("checked");
+    var maxExtraDay=10;
 
 		$("h1").text($("#plan").val())
-		for (var i = 0,l=totalList/listPerDay+25+weekday; i<l; i++) {
+		for (var i = 0,l=totalList/listPerDay+maxExtraDay+weekday; i<l; i++) {
 			currentDay=new Date(firstLineSunday-0+i*86400000);
 			calendar.append("<div>"+(currentDay.getMonth()-0+1)+"/"+currentDay.getDate()+"</div>")
 		};
